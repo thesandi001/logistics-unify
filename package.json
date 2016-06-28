@@ -1,0 +1,41 @@
+{
+  "name": "logistics-unify",
+  "version": "1.0.0",
+  "description": "REST API Server For logistics-unify",
+  "main": "server.js",
+  "scripts": {
+    "dev-local": "nodemon -L server.js",
+    "dev-server": "pm2 start server.js --name='elanic-dev'",
+    "prod-server": "pm2 start server.js -i 1 --name='elanic-prod-server' -- --production ",
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesandi001/logistics-unify.git"
+  },
+  "keywords": [
+    "nodejs",
+    "restify",
+    "logistics",
+    "api",
+    "server"
+  ],
+  "author": "Pragyan Tripathi",
+  "license": "ISC",
+  "dependencies": {
+    "restify": "^4.1.1"
+  },
+  "devDependencies": {},
+  "later-install": {
+    "async": "^1.5.0",
+    "body-parser": "^1.14.2",
+    "jsonwebtoken": "^5.0.5",
+    "lodash": "^4.6.1",
+    "mongoosastic": "^3.3.2",
+    "mongoose": "^4.2.6",
+    "mongoose-deep-populate": "^2.0.3",
+    "request": "^2.72.0",
+    "restify": "^4.0.0",
+    "shortid36": "^0.1.0"
+  }
+}
