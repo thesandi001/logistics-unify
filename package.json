@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev-local": "nodemon -L server.js",
-    "dev-server": "pm2 start server.js --name='elanic-dev'",
-    "prod-server": "pm2 start server.js -i 1 --name='elanic-prod-server' -- --production ",
+    "dev-server": "pm2 start server.js --name='logistics-unify'",
+    "prod-server": "pm2 start server.js -i 1 --name='logistics-unify' -- --production ",
     "test": "mocha --recursive"
   },
   "repository": {
@@ -20,7 +20,7 @@
     "api",
     "server"
   ],
-  "author": "Pragyan Tripathi",
+  "author": "Sandipan Mitra",
   "license": "ISC",
   "dependencies": {
     "restify": "^4.1.1"
